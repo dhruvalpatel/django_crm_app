@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+    rev: v4.4.0
     hooks:
       - id: check-added-large-files #Prevent giant files from being committed.
         args: [ '--maxkb=1024' ]
@@ -36,13 +36,13 @@ repos:
         args: [ "--profile", "black" ]
 
   - repo: https://github.com/pycqa/flake8
-    rev: "3.9.1"
+    rev: "6.0.0"
     hooks:
       - id: flake8
         args: [ --config=.flake8 ]
         additional_dependencies: [ flake8-docstrings, flake8-annotations ]
 
   - repo: https://github.com/thibaudcolas/curlylint
-    rev: "" # select a tag / sha to point at
+    rev: "v0.13.1" # select a tag / sha to point at
     hooks:
       - id: curlylint
