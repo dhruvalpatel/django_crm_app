@@ -41,3 +41,8 @@ repos:
       - id: flake8
         args: [ --config=.flake8 ]
         additional_dependencies: [ flake8-docstrings, flake8-annotations ]
+
+  - repo: https://github.com/thibaudcolas/curlylint
+    rev: "" # select a tag / sha to point at
+    hooks:
+      - id: curlylint
